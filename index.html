@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dangrek&family=Delius+Unicase:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@200;300;400;500;600;700;800&family=Ubuntu:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="Head">
+        <div class="choice">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="score-container">
+            <div class="score-board">
+                <p class="score-Head">COMPUTER SCORE</p>
+                <p id="computer-score" class="score">0</p>
+            </div>
+            <div class="score-board">
+                <p class="score-Head">YOUR <br>SCORE</p>
+                <p id="my-score" class="score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-game">
+
+        <p id="my-pick">YOU PICKED</p>
+        <p class="win-para">YOU WIN</p>
+        <p class="lost-para">YOU LOST</p>
+        <p class="tie">TIE UP</p>
+        <p class="against-para">AGAINST PC</p>
+        <button class="play-again-button">PLAY AGAIN</button>
+        <p id="pc-pick">PC PICKED</p>
+
+        <div class="circle-left">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+
+        <div class="circle-right">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+
+        <div id="game">
+
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+
+            <div class="big-circle rock" value="0">
+                <div class="small-circle">
+                    <img class="rock-img" src="stone.png" alt="rock.png">
+                </div>
+            </div>
+
+            <div class="big-circle scissor" value="1">
+                <div class="small-circle">
+                    <img class="scissor-img" src="scissor.png" alt="scissor.png">
+                </div>
+            </div>
+
+            <div class="big-circle paper" value="2">
+                <div class="small-circle">
+                    <img class="paper-img" src="paper.png" alt="paper.png">
+                </div>
+            </div>
+
+            <div id="clone-element"></div>
+
+        </div>
+
+        <div id="rules-defined">
+
+            <div id="cancel">
+                <button id="inner-cancel">X</button>
+            </div>
+
+            <h1 style="text-align: center; margin-bottom: 0%;">Game Rules</h1>
+
+
+            <div id="rule-div">
+                <div id="boxes">
+                    <div class="yellow-box"></div>
+                    <div class="yellow-box"></div>
+                    <div class="yellow-box"></div>
+                    <div class="yellow-box"></div>
+
+                </div>
+
+                <div id="rules-content">
+                    <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                    <p>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                        scissors.”</p>
+                    <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+                    <p>If both players lay down the same hand, each player lays down another hand</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <button id="rules">RULES</button>
+
+    <button id="next">NEXT</button>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
